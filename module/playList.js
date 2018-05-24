@@ -5,7 +5,8 @@ const asy = require('async');
 
 const baseUrl = 'http://music.163.com';
 const suffixUrl = '/discover/playlist/?cat=%E5%8D%8E%E8%AF%AD';
-const suffixOffsetUrl = '/discover/playlist/?order=hot&cat=%E5%8D%8E%E8%AF%AD&limit=35&offset=';
+const suffixOffsetUrl = suffixUrl + 'order=hot&limit=' + limit + '&offset=';
+const limit = 35;
 const offset = 35;
 const pageTotal = 10;  
 
