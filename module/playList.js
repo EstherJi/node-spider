@@ -3,12 +3,12 @@ const superagent = require('superagent');
 const cheerio = require('cheerio');
 const asy = require('async');
 
+const limit = 35;
+const offset = 35;
+const pageTotal = 10; 
 const baseUrl = 'http://music.163.com';
 const suffixUrl = '/discover/playlist/?cat=%E5%8D%8E%E8%AF%AD';
 const suffixOffsetUrl = suffixUrl + '&order=hot&limit=' + limit + '&offset=';
-const limit = 35;
-const offset = 35;
-const pageTotal = 10;  
 
 class playList{
 
